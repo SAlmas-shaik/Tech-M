@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head></head>
+<body>
+    <button onclick="generateOTP()" style="background-color:blue; color: white; padding: 10px; border: none; cursor: pointer;">
+        OTP
+    </button>
+    <script>
+        function generateOTP() {
+            let a = Math.random();
+            console.log("Random : " + a);
+            let d = a * 10000;
+            console.log("Value : " + d);
+            let c = Math.floor(d);
+            console.log("Result : " + c);
+            console.log(c);
+            document.write(`<h1 style="color:blue">OTP : ${c}</h1>`);
+        }
+    </script>
+</body>
+</html>
